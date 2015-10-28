@@ -46,7 +46,7 @@ function initializeClock(id, endtime) {
   updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
-
+//TODO - Pull the next warband from file rather than just 7 hours from present
 var d1 = new Date ();
 var d2 = new Date ();
 d2.setHours ( d1.getHours() + 7 );
