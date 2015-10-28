@@ -51,4 +51,10 @@ var d1 = new Date ();
 var d2 = new Date ();
 d2.setHours ( d1.getHours() + 7 );
 var deadline = d2;
-initializeClock('clockdiv', deadline);
+
+var readyStateCheckInterval = setInterval(function() {
+    if (document.readyState === "complete") {
+        clearInterval(readyStateCheckInterval);
+        initializeClock('clockdiv', deadline);
+    }
+}, 10);
