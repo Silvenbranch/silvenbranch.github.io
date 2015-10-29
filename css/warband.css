@@ -1,8 +1,7 @@
-body{
-	text-align: center;
-	background: black;
-  font-family: sans-serif;
-  font-weight: 100;
+div#block_content>div#content{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 h1{
